@@ -27,6 +27,12 @@ FROM nginx:alpine
 #exposing to the port 80
 EXPOSE 80
 
+#creating a non-root user for security
+RUN adduser -D static
+
+#switching to new user
+USER static
+
 #removing content of usr/share/nginx/html folder
 RUN rm -rf /usr/share/nginx/html/*
 
