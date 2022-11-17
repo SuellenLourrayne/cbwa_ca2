@@ -28,10 +28,10 @@ FROM nginx:alpine
 EXPOSE 80
 
 #creating a non-root user for security
-RUN adduser -D static
+#RUN adduser -D static
 
 #switching to new user
-USER static
+#USER static
 
 #removing content of usr/share/nginx/html folder
 RUN rm -rf /usr/share/nginx/html/*
