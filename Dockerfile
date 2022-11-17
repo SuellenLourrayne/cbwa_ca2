@@ -24,8 +24,8 @@ RUN npm run build --prod
 #fetching a nginx/alpine server to serve
 FROM nginx:alpine
 
-#exposing to the port 8080
-EXPOSE 8080
+#exposing to the port 80
+EXPOSE 80
 
 #removing content of usr/share/nginx/html folder
 RUN rm -rf /usr/share/nginx/html/*
