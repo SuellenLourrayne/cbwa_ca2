@@ -17,6 +17,7 @@ RUN npm install -g ionic
 
 #installing dependencies
 RUN npm install
+RUN npm i @ionic/storage-angular
 
 #building application for deployment
 RUN npm run build --prod
