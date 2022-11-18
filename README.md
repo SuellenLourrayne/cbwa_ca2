@@ -10,7 +10,7 @@ Docker Image that contains the Ionic application that you built for Mobile Devel
 - Access mobdev_ca3 on the browse with the link: http://localhost:8080
 
 # Observations about the Dockerfile
-Security measures lines were commented on file and were not implemented because it causing an error that I was unable to solve.
+Security measures lines were commented and were not implemented because it was causing an error that I was unable to solve.
 
 The error was:
  - => ERROR [stage-1 3/4] RUN rm -rf /usr/share/nginx/html/*
