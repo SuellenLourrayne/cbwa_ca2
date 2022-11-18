@@ -13,10 +13,10 @@ Docker Image that contains the Ionic application that you built for Mobile Devel
 Security measures lines were commented on file and were not implemented because it causing an error that I was unable to solve.
 
 The error was:
- => ERROR [stage-1 3/4] RUN rm -rf /usr/share/nginx/html/*
- #7 0.406 rm: can't remove '/usr/share/nginx/html/50x.html': Permission denied
- #7 0.406 rm: can't remove '/usr/share/nginx/html/index.html': Permission denied
- executor failed running [/bin/sh -c rm -rf /usr/share/nginx/html/*]: exit code: 1
+ - => ERROR [stage-1 3/4] RUN rm -rf /usr/share/nginx/html/*
+ - #7 0.406 rm: can't remove '/usr/share/nginx/html/50x.html': Permission denied
+ - #7 0.406 rm: can't remove '/usr/share/nginx/html/index.html': Permission denied
+ - executor failed running [/bin/sh -c rm -rf /usr/share/nginx/html/*]: exit code: 1
 
 ## Pushing image to docker repository
 - Build image from dockerfile: docker build -t cbwaca2 .
