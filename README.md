@@ -14,9 +14,9 @@ Security measures lines were commented on file and were not implemented because 
 
 The error was:
  => ERROR [stage-1 3/4] RUN rm -rf /usr/share/nginx/html/*
-#7 0.406 rm: can't remove '/usr/share/nginx/html/50x.html': Permission denied
-#7 0.406 rm: can't remove '/usr/share/nginx/html/index.html': Permission denied
-executor failed running [/bin/sh -c rm -rf /usr/share/nginx/html/*]: exit code: 1
+ #7 0.406 rm: can't remove '/usr/share/nginx/html/50x.html': Permission denied
+ #7 0.406 rm: can't remove '/usr/share/nginx/html/index.html': Permission denied
+ executor failed running [/bin/sh -c rm -rf /usr/share/nginx/html/*]: exit code: 1
 
 ## Pushing image to docker repository
 - Build image from dockerfile: docker build -t cbwaca2 .
