@@ -3,11 +3,20 @@ Suellen Oliveira - CCT College
 
 Docker Image that contains the Ionic application that you built for Mobile Development with a server and that is ready to be distributed to any cloud provider supporting Docker containers.
 
-# Instructions to use
+# Usage
 - First you pull the image with: docker pull suellenlourrayne/cbwaca2:0.3
 - After, you change the image name: docker tag suellenlourrayne/cbwaca2:0.3 cbwaca2
 - Run container, in this case on port 8080: docker run -it --rm -p 8080:80 cbwaca2
 - Access mobdev_ca3 on the browse with the link: http://localhost:8080
+
+# Observations about the Dockerfile
+Security measures lines were commented on file and were not implemented because it causing an error that I was unable to solve.
+
+The error was:
+ => ERROR [stage-1 3/4] RUN rm -rf /usr/share/nginx/html/*
+#7 0.406 rm: can't remove '/usr/share/nginx/html/50x.html': Permission denied
+#7 0.406 rm: can't remove '/usr/share/nginx/html/index.html': Permission denied
+executor failed running [/bin/sh -c rm -rf /usr/share/nginx/html/*]: exit code: 1
 
 ## Pushing image to docker repository
 - Build image from dockerfile: docker build -t cbwaca2 .
